@@ -1,12 +1,6 @@
-{% extends 'base.html' %}
-{% block title %}Contáctame{% endblock %}
-{% block content %}
-
 <h2>Contáctame</h2>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
-
-{% endblock %}
