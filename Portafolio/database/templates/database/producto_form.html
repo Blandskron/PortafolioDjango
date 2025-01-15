@@ -1,8 +1,3 @@
-{% extends 'base.html' %}
-{% block title %}Productos{% endblock %}
-{% block content %}
-
-
 <h2>{% if form.instance.pk %}Editar{% else %}Crear{% endif %} Producto</h2>
 <form method="post">
     {% csrf_token %}
@@ -10,5 +5,3 @@
     <button type="submit">Guardar</button>
 </form>
 <a href="{% url 'producto_list' %}">Volver</a>
-
-{% endblock %}

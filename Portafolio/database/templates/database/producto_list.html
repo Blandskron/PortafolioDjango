@@ -1,7 +1,3 @@
-{% extends 'base.html' %}
-{% block title %}Lista de Productos{% endblock %}
-{% block content %}
-
 <h2>Productos</h2>
 <a href="{% url 'producto_create' %}">Crear Producto</a>
 <ul>
@@ -13,5 +9,3 @@
         </li>
     {% endfor %}
 </ul>
-
-{% endblock %}
